@@ -19,7 +19,7 @@ import com.iremkoc.springboot_react_demo.service.IStudentService;
 
 import lombok.RequiredArgsConstructor;
 
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:5173")
 @RestController
 @RequestMapping("/students")
 @RequiredArgsConstructor
