@@ -8,7 +8,9 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <AppRouter />
+        <div className="flex flex-col min-h-screen">
+          <AppRouter />
+        </div>
       </BrowserRouter>
     </QueryClientProvider>
   );
