@@ -1,13 +1,12 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import HomePage from "./pages/HomePage";
-function App() {
+import Home from "./pages/Home/Home";
+export default function App() {
+  const queryClient = new QueryClient();
+
   return (
-    <div>
-      <Navbar />
-      <HomePage />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Home />
+    </QueryClientProvider>
   );
 }
-
-export default App;
